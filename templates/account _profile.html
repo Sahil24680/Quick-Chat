@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile page</title>
+    <link rel="stylesheet" href="{% static 'account -profile.css' %}"> <!-- Corrected CSS filename -->
+</head>
+<body>
+    <div class="follow_container">
+        <h1>{{ profile.user.username }}'s page</h1>
+        {% if not request.user.is_authenticated or request.user != profile.user %}
+            <form method="post" action="{% url 'follow' account_id=profile_id %}">
+                {% csrf_token %}
+                <button type="submit" name="follow" class="follow">Follow</button>
+            </form>
+        {% endif %}
+    </div>
+    
+    <h2 >  Followers: {{ profile.followers }}</h2>
+    <div class="followed-users-container">
+        <ul>
+            {% for user in followed_users %}
+              
+                    
+                        <p class = "user-follow">user: {{ user.username }}</p>
+                        <img class="pfp" src="{{ user.profile.profile_image.url }}" alt="{{ user.username }} Profile Picture">
+                    
+               
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

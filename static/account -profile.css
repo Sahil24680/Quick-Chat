@@ -1,0 +1,131 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Follow container styles */
+.follow_container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Follow button styles */
+.follow_button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.follow_button:hover {
+    background-color: #0056b3;
+}
+
+/* Follower count styles */
+.followers {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Followed users container styles */
+.followed-users-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Title styles */
+.followed-users-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* User list styles */
+.user-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.user-list li p {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.user-list li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.pfp {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Ensure square dimensions for a circular image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the element completely */
+    border: 3px solid #fff; /* Adds a white border around the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a 3D effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow effect */
+ 
+}
+.pfp:hover {
+    transform: scale(1.1); /* Slightly enlarges the image on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhances the shadow on hover */
+}
+
+/* Follow button styles */
+.follow {
+    background-color: #4c5baf; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    text-align: center; /* Center align text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Display as inline-block */
+    font-size: 16px; /* Font size */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s; /* Smooth transition */
+    
+}
+
+/* Hover state */
+.follow:hover {
+    background-color: #45a049; /* Darker green color on hover */
+}
+
+
+.user-follow{
+    margin-left: 10px;
+}
